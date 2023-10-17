@@ -1,0 +1,42 @@
+#headerDiv{
+    background-color: black;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+}
+
+#headerDiv img{
+    height: 100px;
+    width: 10%;
+    float: left;
+}
+
+#headerDiv h1{
+    color: grey ;
+    font-size: 50px;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 40px;
+    float: left;
+
+}
+
+
+#footerDiv{
+    background-color: black;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+     }
+     #footerDiv p{
+         color: aliceblue;
+         margin-left: 40;
+         margin-top: 10px;
+         text-align: center;
+
+     }
