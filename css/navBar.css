@@ -23,13 +23,16 @@
     float: left;
 
 }
+
+
+
 #headerDiv a{
     color:whitesmoke;
     font-size: 15px;
     margin-left: 40px;
     margin-top: 40px;
     margin-right: 40;
-    float:left;
+    float: left;
     text-decoration:none;
     background-color: gray;
     padding: 5px;
@@ -37,7 +40,7 @@
     border-radius: 5px;
 }
 
-}
+
 
 #footerDiv{
     background-color: black;
@@ -47,10 +50,50 @@
     left: 0;
     bottom: 0;
      }
-     #footerDiv p{
+#footerDiv p{
+    font-size: 15px;
          color: aliceblue;
          margin-left: 40;
          margin-top: 10px;
          text-align: center;
+
+     }
+
+     body{
+
+
+
+         background-color: pink;
+
+     }
+     @media screen and (max-width:500px){
+         body{
+             background-color: whitesmoke;
+
+         }
+         #headerDiv{
+            background-color: black;
+            height: 200px;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+
+
+        }
+     }
+
+     @media screen and (max-width:700px){
+        body{
+            background-color:red;
+
+        }
+        
+       #headerDiv{
+           height:200px ;
+       }
+
+       
+
 
      }
