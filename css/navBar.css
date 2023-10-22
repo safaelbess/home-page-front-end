@@ -19,12 +19,16 @@
     font-size: 50px;
     margin-top: 20px;
     margin-left: 100px;
-    margin-right: 40px;
+   
     float: left;
 
 }
 
-
+#headerLinks{
+    margin-right: 5%;
+    margin-top: 10px;
+    float: right;
+}
 
 #headerDiv a{
     color:whitesmoke;
@@ -66,34 +70,59 @@
          background-color: pink;
 
      }
-     @media screen and (max-width:500px){
+     @media screen and (max-width: 1020px){
          body{
-             background-color: whitesmoke;
+             background-color: red;
 
          }
-         #headerDiv{
-            background-color: black;
-            height: 200px;
-            width: 100%;
-            position: fixed;
-            top: 0;
-            left: 0;
-
+         #headerDiv h1{
+           font-size: 36px;
+           margin-left: 30px;
 
         }
-     }
-
-     @media screen and (max-width:700px){
-        body{
-            background-color:red;
-
+        #headerDiv a{
+            margin-left: 20px;
+            margin-top: 4%;
         }
-        
-       #headerDiv{
-           height:200px ;
-       }
+        headerLinks a:hover{
+            background-color: aliceblue;
+            color: black;
+           
+        }
 
+    
+}
+@media screen and (max-width: 600px){
+    body{
+        background-color: red;
+
+    }
+    #headerLinks  {
+    margin-top: 10px;
+    background-color: lightgray;
+    padding: 25px;
+    }
+
+    headerLinks a:hover{
+        background-color: aliceblue;
+        color: black;
        
+    }
+    #headerLinks a {
+     display:block;
+     background-color: lightgray;
+     border: 0px;
+     margin-left: 0px;
+    
+     text-align: center;
+
+   }
+}
 
 
-     }
+
+
+ 
+
+
+    
