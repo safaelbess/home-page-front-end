@@ -67,8 +67,12 @@
 
 
 
-         background-color: pink;
+         background-color:whitesmoke;
 
+     }
+     headerLinks a:hover{
+        background-color: aliceblue;
+        color:whitesmoke;
      }
      @media screen and (max-width: 1020px){
          body{
