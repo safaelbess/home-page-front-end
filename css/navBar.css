@@ -93,14 +93,16 @@
             color: black;
            
         }
-
     
+}
+#demo{
+    margin-top: 200px;
 }
 
 #mainDiv{
 
 
-    margin-top: 200px;
+    margin-top: 50px;
     margin-left: 200px;
     color: midnightblue;
     font-family: Arial, Helvetica, sans-serif;
@@ -139,17 +141,17 @@
 #welcome{
     height: 100px;
     width: 100px;
-    float: right;
+   
     margin-top: 100px;
-    margin-right:100px;
+    
 
 
 }
 
 #mainDivId{
     margin-top: 200px;
-    margin-left: 200px;
-    color: midnightblue;
+    margin-left: 100px;
+    color: midnghtblue;
     font-family: Arial, Helvetica, sans-serif;}
 
    
@@ -177,4 +179,24 @@
         background-color: gainsboro;
         display: block;
         padding:20px;
+    }
+
+    #navitem{
+        margin-top: 100px;
+        margin-right: 70px;
+        padding-block: 20px;
+        background-color: lightgray;
+        font-size: 36px;
+
+        
+    }
+    #skillsimg{
+        width: 500px;
+        height:500px;
+        margin-left: 300px;
+        margin-top: 200px;
+        
+    }
+    #skillbody{
+        background-image: url("../media/download.jpg")
     }
