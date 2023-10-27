@@ -96,6 +96,18 @@
 
     
 }
+
+#mainDiv{
+
+
+    margin-top: 200px;
+    margin-left: 200px;
+    color: midnightblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
 @media screen and (max-width: 600px){
     body{
         background-color: red;
@@ -124,9 +136,45 @@
 }
 
 
+#welcome{
+    height: 100px;
+    width: 100px;
+    float: right;
+    margin-top: 100px;
+    margin-right:100px;
 
 
- 
+}
 
+#mainDivId{
+    margin-top: 200px;
+    margin-left: 200px;
+    color: midnightblue;
+    font-family: Arial, Helvetica, sans-serif;}
+
+   
+    #contactlabel{
+        background-color: gray;
+        width: 50%;
+    }
+    #contactinput{
+        width: 50%;
+    }
+
+    #massage{
+        width: 50%;
+        height: 30px;
+    }
 
     
+    #service a{
+        margin-top:200px; 
+        margin-right: 40px;
+        font-size: 36px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: limegreen;
+        width: 20px;
+        background-color: gainsboro;
+        display: block;
+        padding:20px;
+    }
