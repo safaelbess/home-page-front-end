@@ -18,13 +18,17 @@ console.log(sumFunction(30,10));
 
 
 var body=document.getElementsByTagName('body');
-console.log(body[0].style.backgroundColor);
-function changeBackground()
-{body[0].style.backgroundColor=='pink';
-if (body[0].style.backgroundColor=='pink')
-     body[0].style.backgroundColor='red';
-     else
-     body[0].style.backgroundColor='pink';
+var footer=document.getElementsById("footerDiv");
 
-}
+console.log(body[0].backgroundColor);
+function changeBackground()
+{
+
+if (body[0].style.backgroundColor=='whitesmoke')
+     body[0].style.backgroundColor='red';
+    // document.getElementsById("footerDiv").style.backgroundColor='grey';}
+else
+    body[0].style.backgroundColor='whitesmoke';
+     //document.getElementsById("footerDiv").style.backgroundColor='black';}
+
 
