@@ -1,52 +1,10 @@
-#headerDiv{
-    background-color: black;
+#contactForm{
+    width: 100px;
     height: 100px;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+    
 }
-
-#headerDiv img{
-    height: 100px;
-    width: 10%;
-    float: left;
-}
-
-#headerDiv h1{
-    color: grey ;
-    font-size: 50px;
-    margin-top: 20px;
-    margin-left: 100px;
-    margin-right: 40px;
-    float: left;
-
-
-
-}
-#mainDiv {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 50px;
-    color: brown;
-    margin-left: 100px;
-    margin-top: 200px;
-
-
-}
-
-#footerDiv{
-    background-color: black;
-    height: 50px;
-    width: 100%;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-     }
-     #footerDiv p{
-         color: aliceblue;
-         margin-left: 40;
-         margin-top: 10px;
-         text-align: center;
-
-     }
