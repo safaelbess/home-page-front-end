@@ -3,7 +3,7 @@ var contacform = document.getElementById('contactForm');
 var nameform = document.getElementById('name');
 var emailform = document.getElementById('email');
 var subjectform = document.getElementById('subject');
-
+console.log(nameform.value) ;
 contacform.addEventListener('submit',function(e){
      e.preventDefault();
      Swal.fire({
@@ -16,5 +16,10 @@ contacform.addEventListener('submit',function(e){
 
     
     
-})
+});
 
+var loggedIn= document.getElementById('loggedIn');
+if(localStorage.getItem('name') ==null){
+    alert('you have to login');
+    location.replace('../pages/login.html');
+}

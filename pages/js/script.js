@@ -18,8 +18,8 @@ console.log(sumFunction(30,10));
 
 
 var body=document.getElementsByTagName('body');
-var footer=document.getElementsById("footerDiv")[0];
-var header= document.getElementById('headerDiv')[0];
+var footer=document.getElementsById("footerDiv");
+var header= document.getElementById('headerDiv');
 
 console.log(body[0].backgroundColor);
 function changeBackground()
