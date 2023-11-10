@@ -12,6 +12,7 @@ if( localStorage.getItem('name') !=null){
 }
 else{
     //loginOrOut.innerHTML='login';
+    
     alert('you are not a user please log in');
     location.replace("../pages/login.html");
 }
