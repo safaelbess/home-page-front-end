@@ -1,0 +1,22 @@
+#headerDiv h1{
+    color:darkblue ;
+    font-size: 40px;
+    margin-top: 20px;
+    margin-left: 150px;
+    margin-right: 10px;
+    float: left;
+
+}
+#headerDiv a{
+    color: green;
+    font-size: 15px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 40;
+    float: left;
+    text-decoration:none;
+    background-color: whitesmoke;
+    padding: 5px;
+    border: 2px solid darkcyan;
+    border-radius: 5px;
+}

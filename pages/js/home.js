@@ -1,21 +1,28 @@
-var user1=document.getElementById('user');
-
-user1.innerHTML= localStorage.getItem('name');
-var loginOrOut =document.getElementById('loginOrOut');
-
-if( localStorage.getItem('name') !=null){
-
-    loginOrOut.innerHTML='log out';
+var userName = document.getElementById("userName");
+userName.innerHTML = localStorage.getItem("name");
+var loginOrOut = document.getElementById("loginOrOut");
+debugger;
+//alert(localStorage.getItem('name'));
+if (localStorage.getItem('name') != null){
     
-
+    loginOrOut.innerHTML='logout';
+    document.getElementById('register').style.display = 'none';
 
 }
 else{
-    //loginOrOut.innerHTML='login';
-    
-    alert('you are not a user please log in');
-    location.replace("../pages/login.html");
+    alert('you are not a user please login');
+    location.replace('pages/about.html');
+}
+function clearStorage(){
+    localStorage.removeItem('name');
+    localStorage.removeItem('email');
+    localStorage.removeItem('password');
+    location.replace('../pages/login.html');
 }
 
+// Initialization for ES Users
+// import { Carousel, initMDB } from "mdb-ui-kit";
 
-    
+// initMDB({ Carousel });
+
+

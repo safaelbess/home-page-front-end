@@ -1,6 +1,6 @@
 #headerDiv{
     background-color: black;
-    height: 100px;
+    height: 50 px;
     width: 100%;
     position: fixed;
     top: 0;
@@ -34,6 +34,8 @@
 
 
 }
+
+
 
 #footerDiv{
     background-color: black;

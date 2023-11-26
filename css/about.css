@@ -1,5 +1,5 @@
 #headerDiv{
-    background-color: black;
+    background-color:lightgrey;
     height: 100px;
     width: 100%;
     position: fixed;
@@ -10,19 +10,17 @@
 
 #headerDiv img{
     height: 100px;
-    width: 10%;
+    width: 15%;
     float: left;
 }
 
 #headerDiv h1{
-    color: grey ;
+    color:darkblue ;
     font-size: 50px;
     margin-top: 20px;
-    margin-left: 100px;
-    margin-right: 40px;
+    margin-left: 150px;
+    margin-right: 20px;
     float: left;
-
-
 
 }
 #mainDiv {
@@ -36,7 +34,7 @@
 }
 
 #footerDiv{
-    background-color: black;
+    background-color: lightgrey ;
     height: 50px;
     width: 100%;
     position: fixed;
@@ -44,9 +42,43 @@
     bottom: 0;
      }
      #footerDiv p{
-         color: aliceblue;
+         color: darkblue;
          margin-left: 40;
          margin-top: 10px;
          text-align: center;
 
      }
+
+
+     body{
+    direction: ltr;
+    background-color: aliceblue;
+     }
+  
+
+     .about{
+       margin-top: 150px;
+        margin-left: 5px;
+        font-size: 1.2rem;
+        color :darkblue;
+    }
+    #aboutImg:hover{
+        border: 2px solid burlywood;
+ 
+    }
+    
+    #methods{
+        color:darkred;
+    }
+
+    #aboutImg{
+        width: 150px;
+        height: 150px;
+        border: 4px solid rgb(247, 250, 247);
+        margin-right: 5px;
+        margin-left: 20px;
+        background-color: transparent;
+        padding: 1px;
+        margin-bottom: 2px;
+        
+    }       

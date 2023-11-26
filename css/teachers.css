@@ -1,0 +1,115 @@
+
+
+
+
+#picture{
+     width: 5px; 
+    height: 5px; 
+    
+
+
+}
+.title{
+    display: flex;
+    justify-content: center;
+    color: darkblue;
+    font-weight: 800;
+    margin-bottom: 30px;
+
+}
+#headerDiv h1{
+    color:darkblue ;
+    font-size: 20px;
+    margin-top: 40px;
+    margin-left: 10px;
+    float: left;
+
+}
+.cards{
+    margin-top: 100px;
+    display:flex;
+    flex-direction: column;
+    }
+
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card{
+    background-color:whitesmoke;
+    width:15rem;
+    height: 15rem;
+    box-shadow: 0 5px 25px rgba(1 1 1 /15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    justify-content: center;
+   
+}
+.card:hover{
+    transform: scale(1.1);
+    transition: 0.7s ease;
+}
+.info{
+    text-align: center;
+}
+.info h2{
+    color: darkblue;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 10px;
+}
+.picture{
+    width: 2px;;
+    height: 3px;
+}
+.fa-solid{
+    width: 5px;
+    height: 5px;
+}
+#teac{
+    border: none;
+}
+
+
+/* .teachers{
+    float: right;
+width: 1366px;
+margin: 0 auto;
+padding:0  ;
+display: grid;
+grid-template-columns: auto auto auto  auto;
+
+flex-direction: row;
+justify-content: center;
+border-color: green;
+}
+
+.teachers h4{
+margin-top: 80px;
+color:gray;
+font-size: 1.8rem;
+margin-right: 5px;
+.info
+margin-left: 5rem;
+
+margin-bottom: 5px;}
+
+.teacher{
+display:flex;
+flex-direction: column ;
+align-items: center;
+padding: 2rem;
+border: 2px;
+border-radius: 2px;
+margin: 2rem;
+
+color: darkgreen;
+font-size: 1rem;
+
+font-family:Arial, Helvetica;
+text-align: center;
+border: none;
+} */

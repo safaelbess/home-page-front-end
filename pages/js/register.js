@@ -1,164 +1,225 @@
-
-
 var regForm = document.getElementById('regForm');
-var nameForm = document.getElementById('form3Example1c');
-var emailForm = document.getElementById('form3Example3c');
-var passForm = document.getElementById('form3Example4c');
-var conpassForm = document.getElementById('form3Example4cd');
-console.log(nameForm.value);
-//var user1= document.getElementsByClassName('user')[0];
 
-  // do something with localStorage.getItem(localStorage.key(i));
-for(i=0;i<nameForm.length();i++){
-  let hasSpace=false;
-  let ch=nameForm.charAt(i);
-  if(ch==" "){
-   hasSpace=true;
-  }
-  
-if (hasSpace==true){
-break;
+var usersData = localStorage.getItem('users') ? JSON.parse(localStorage.getItem('users')) : [] ;
+console.log(usersData);
+//document.getElementById('btn-register').addEventListener('click', function (e) {
 
-}
-else
-{
-  Swal.fire({
-    position: 'center',
-    icon: 'error',
-    title: 'your password must include a space',
-    showConfirmButton: false,
-    timer: 1500
-  });
-}
+//    e.preventDefault();
+//    var nameForm = $('#form3Example1c').val();
+//    var emailForm = $('#form3Example3c').val();
+//    var passwordForm = $('#form3Example4c').val();
+//    var confirmPasswordForm = $('#form3Example4cd').val();
+//    if (passwordForm!=confirmPasswordForm){
+//        Swal.fire({
+//            position: 'center',
+//            icon: 'error',
+//            title: 'Password and Confirm Password are not the same',
+//            showConfirmButton: false,
+//            timer: 6000
+//          });
+//    }
+//    else{
 
-}
+//        // set data to local storage
+//        // localStorage.setItem('name',nameForm.value);
+//        // localStorage.setItem('email',emailForm.value);
+//        // localStorage.setItem('password',passwordForm.value);
+//        //  get data from local storage
+//        //  delete data from local storage
+//        //  update data in local storage
+//        //  class ? > structure of the object
+//        //  object ? > data > access string
+//        //  json :> javascript object notation
+//        let user = {
+//            name:nameForm,
+//            email:emailForm,
+//            password:passwordForm
+//        };
+//        if(usersData.length!=0){
+//            let isExist = false;
+//        for (let i = 0; i< usersData.length;i++){
+//            if(usersData[i]['email']==emailForm){
+//                Swal.fire({
+//                    position: 'center',
+//                    icon: 'error',
+//                    title: 'Email already exists',
+//                    showConfirmButton: false,
+//                    timer: 6000
+//                  });
+//                isExist = false;
+//                return;
+//            }
+//            else if(usersData[i]['name']==nameForm){
+//                Swal.fire({
+//                    position: 'center',
+//                    icon: 'error',
+//                    title: 'Name already exists',
+//                    showConfirmButton: false,
+//                    timer: 6000
+//                  });
+//                  isExist = false;
+//                return;
+//            }
+//            else{
+//                isExist = true;
 
-var hasLOwerCase =false;
-var hasUpperCase= false;
-var hasDigit=false;
-var hasSpecialChar = false;
+//            }
 
-for (i =0;i< passForm.length;i++)
-{ let ch =passForm.charAt(i);
-  if(CharacterData.hasUpperCase(i)){
-    hasUpperCase=true;
+//        }
+//        if(isExist==true){
+//            usersData.push(user);
+//                localStorage.setItem('users',JSON.stringify(usersData));
+//                console.log(localStorage.getItem('users'));
+//                Swal.fire({
+//                    position: 'top-end',
+//                    icon: 'success',
+//                    title: 'Your account was created successfully',
+//                    showConfirmButton: false,
+//                    timer: 1500
+//                  });
+//            $(".toggle-login").click();
+//        }
+//    }
+//    else{
 
-  }
-  else if(CharacterData.hasLOwerCase(i))
-{
-  hasLOwerCase=true;
-}
-  else if(CharacterData.hasDigit(i))
-  {
-    hasDigit=true;
+//        usersData.push(user);
+//                localStorage.setItem('users',JSON.stringify(usersData));
+//                console.log(localStorage.getItem('users'));
+//                Swal.fire({
+//                    position: 'top-end',
+//                    icon: 'success',
+//                    title: 'Your account was created successfully',
+//                    showConfirmButton: false,
+//                    timer: 1500
+//                  }); 
+//    };
+//  }
 
-  }
-  else if(CharacterData.hasSpecialChar(i))
-  {
-    hasSpecialChar=true;
-  }
-
-var isStrongPassword =hasDigit && hasLOwerCase && hasUpperCase && hasSpecialChar;
-  if(isStrongPassword==true)
-
-alert('your password is strong')
-
-
-  else
-{
-  Swal.fire({
-    position: 'center',
-    icon: 'error',
-    title: 'your password is not strong please try an other password',
-    showConfirmButton: false,
-    timer: 1500
-  });
-}
+//});	
 
 
+function validatePassword(password) {
+    const minLength = 8;
+    const hasUpperCase = /[A-Z]/;
+    const hasNumber = /[0-9]/;
+    const hasSpecialChar = /[^A-Za-z0-9]/;
 
-
-var usersData =localStorage.getItem('user')?JSON.parse(localStorage.getItem('user')):[];
-
-regForm.addEventListener('submit' ,function(e){
-  
-  
-e.preventDefault();
-
-      
-  if(passForm.value!=conpassForm.value){
-
-    Swal.fire({
-        position: 'center',
-        icon: 'error',
-        title: 'password and confirm password do not match',
-        showConfirmButton: false,
-        timer: 1500
-      });
-   
+    if (password.length < minLength) {
+        return false;
     }
-  
-  else{ //user1.innerHTML=nameForm.value;
-   // localStorage.setItem('name',nameForm.value);
-   // localStorage.setItem('email',emailForm.value);
-
-  //  localStorage.setItem('password',passForm.value);
-  let user ={
-name:nameForm.value,
-email:emailForm.value,
-password:passForm.value
-
-  };
-  
-  if (usersData!=null){
-  let isExist=false;
-    for( let i=0;i<usersData.length;i++){
-   
-     if (usersData[i]['email']==emailForm.value){
-
-    Swal.fire({
-      position: 'center',
-      icon: 'error',
-      title: 'email already exists',
-      showConfirmButton: false,
-      timer: 1500});
-      ifExist=false;
-      return;
+    if (!hasUpperCase.test(password)) {
+        return false;
     }
-    else if(usersData[i]['name']==nameForm.value)
-      {Swal.fire({
-        position: 'center',
-        icon: 'error',
-        title: 'name already exists',
-        showConfirmButton: false,
-        timer: 1500});
-        ifExist=false;
-         return;
-      }
-    else{
-      ifExist=true;
-    }   
-  }
-  if(ifExist==true) {   
-    usersData.push(user);
-    localStorage.setItem('user',JSON.stringify(usersData));
-    Swal.fire({
-        position: 'center',
-            icon: 'success',
-        title: 'you have logged in successfully',
-        showConfirmButton: false,
-        timer: 1500
-      });
-      
- 
+    if (!hasNumber.test(password)) {
+        return false;
     }
-  }
-  ); // use}r1.innerH
-    // TML=localStorage.getItem ('form3Example1c');
-    
+    if (!hasSpecialChar.test(password)) {
+        return false;
+    }
+    return true;
+}
+document.addEventListener('DOMContentLoaded', function () {
+    const registerButton = document.getElementById('btn-register');
+    registerButton.addEventListener('click', function () {
+        const passwordInput = document.getElementById('form3Example4c').value;
+        const isValid = validatePassword(passwordInput);
 
+        if (isValid) {
+            var nameForm = $('#form3Example1c').val();
+            var emailForm = $('#form3Example3c').val();
+            var passwordForm = $('#form3Example4c').val();
+            var confirmPasswordForm = $('#form3Example4cd').val();
+            if (passwordForm != confirmPasswordForm) {
+                Swal.fire({
+                    position: 'center',
+                    icon: 'error',
+                    title: 'Password and Confirm Password are not the same',
+                    showConfirmButton: false,
+                    timer: 6000
+                });
+            }
+            else {
 
-  
+                // set data to local storage
+                // localStorage.setItem('name',nameForm.value);
+                // localStorage.setItem('email',emailForm.value);
+                // localStorage.setItem('password',passwordForm.value);
+                //  get data from local storage
+                //  delete data from local storage
+                //  update data in local storage
+                //  class ? > structure of the object
+                //  object ? > data > access string
+                //  json :> javascript object notation
+                let user = {
+                    name: nameForm,
+                    email: emailForm,
+                    password: passwordForm
+                };
+                if (usersData.length != 0) {
+                    let isExist = false;
+                    for (let i = 0; i < usersData.length; i++) {
+                        if (usersData[i]['email'] == emailForm) {
+                            Swal.fire({
+                                position: 'center',
+                                icon: 'error',
+                                title: 'Email already exists',
+                                showConfirmButton: false,
+                                timer: 6000
+                            });
+                            isExist = false;
+                            return;
+                        }
+                        else if (usersData[i]['name'] == nameForm) {
+                            Swal.fire({
+                                position: 'center',
+                                icon: 'error',
+                                title: 'Name already exists',
+                                showConfirmButton: false,
+                                timer: 6000
+                            });
+                            isExist = false;
+                            return;
+                        }
+                        else {
+                            isExist = true;
 
+                        }
 
-  
+                    }
+                    if (isExist == true) {
+                        usersData.push(user);
+                        localStorage.setItem('users', JSON.stringify(usersData));
+                        console.log(localStorage.getItem('users'));
+                        Swal.fire({
+                            position: 'top-end',
+                            icon: 'success',
+                            title: 'Your account was created successfully',
+                            showConfirmButton: false,
+                            timer: 1500
+                        });
+                        $(".toggle-login").click();
+                    }
+                }
+                else {
+
+                    usersData.push(user);
+                    localStorage.setItem('users', JSON.stringify(usersData));
+                    console.log(localStorage.getItem('users'));
+                    Swal.fire({
+                        position: 'top-end',
+                        icon: 'success',
+                        title: 'Your account was created successfully',
+                        showConfirmButton: false,
+                        timer: 1500
+                    });
+                };
+            }
+
+        } else {
+            Swal.fire({
+                 icon: 'warning',
+                title: 'Password does not meet the requirements'
+            });
+        }
+    });
+});

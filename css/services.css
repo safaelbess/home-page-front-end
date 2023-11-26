@@ -50,3 +50,11 @@
          text-align: center;
 
      }
+    body{
+        direction: ltr;
+    }
+    body h2{
+        margin-top: 100 px;
+        margin-right: 50 px;
+
+    }

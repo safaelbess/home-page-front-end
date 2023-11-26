@@ -1,5 +1,5 @@
 #headerDiv{
-    background-color: black;
+    background-color:lightgrey;
     height: 100px;
     width: 100%;
     position: fixed;
@@ -10,17 +10,25 @@
 
 #headerDiv img{
     height: 100px;
-    width: 100px;
+    width: 300px;
     float: left;
+    
+}
+
+.vh-100{
+    width: 80%;
+    height: 50%;
+    margin-top: 10px;
+    color: darkblue;
 }
 
 #headerDiv h1{
-    color: grey ;
-    font-size: 50px;
+    color: midnightblue ;
+    font-size: 40px;
     margin-top: 20px;
     margin-left: 100px;
-   
     float: left;
+
 
 }
 
@@ -31,23 +39,27 @@
 }
 
 #headerDiv a{
-    color:whitesmoke;
+    color: green;
     font-size: 15px;
     margin-left: 40px;
     margin-top: 40px;
     margin-right: 40;
     float: left;
     text-decoration:none;
-    background-color: gray;
+    background-color: whitesmoke;
     padding: 5px;
-    border: 1px solid whitesmoke;
+    border: 1px solid green;
     border-radius: 5px;
+    
 }
 
-
+#headerDiv a:hover{
+    color: lightgray;
+    
+}
 
 #footerDiv{
-    background-color: black;
+    background-color: lightgrey;
     height: 50px;
     width: 100%;
     position: fixed;
@@ -56,19 +68,27 @@
      }
 #footerDiv p{
     font-size: 15px;
-         color: aliceblue;
+         color: midnightblue;
          margin-left: 40;
          margin-top: 10px;
          text-align: center;
 
      }
+     #loginForm{
+         margin-top: 200px;
+         margin-right: 30px;
+     
 
-     body{
+    
+     }
 
-
-
-         background-color:whitesmoke;
-
+     .img-fluid{
+         border: 3px solid darkgreen;
+     }
+      body{
+        background-image: url("../media/edu.jpg");
+        background-position: center;
+        background-size: cover;
      }
      headerLinks a:hover{
         background-color: aliceblue;
@@ -135,15 +155,26 @@
      text-align: center;
 
    }
+
+}
+body{
+    background-image: url("../media/edu.jpg");
+    background-position: center;
+    background-size: cover;
+
+
+}
+.img-fluid{
+    width: 100%;
+    height: 100%;
 }
 
-
 #welcome{
-    height: 100px;
-    width: 100px;
-   
-    margin-top: 100px;
-    
+    height:300px;
+    width:300px;
+   float: right;
+    margin-top:80px;
+    /* cursor: pointer; */
 
 
 }
@@ -200,3 +231,25 @@
     #skillbody{
         background-image: url("../media/download.jpg")
     }
+
+    
+.btn{
+    text-emphasis: pointer;
+}
+
+.form-check.form-switch{
+    margin-top: 40px;
+    float: right;
+    
+
+}
+.body{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../media/bubbles.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    
+}

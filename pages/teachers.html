@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html id="html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Teacchers page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!--<link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/teachers.css">-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background-image: url("../media/edu.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+        .card-img-top {
+            width: 65%;
+            border-radius: 50%;
+            margin: 0 auto;
+            box-shadow: 0 0 10px rgba(0,0,0,.2);
+            margin-top:10px;
+        }
+        .hover-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+            .hover-card:hover {
+                transform: scale(1.05);
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            }
+            .cursor{
+                cursor:pointer;
+            }
+    </style>
+</head>
+<body>
+
+<!-- Navba -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light static-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="../media/Screenshot_20231116-100131_1.jpg" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" id="Indexabout" href="../pages/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+
+
+                        <a class="nav-link " href="../pages/subjects.html">subjects</a>
+
+                    </li>
+                    <li class="nav-item">
+
+                        <a class="nav-link active" id="teachers" href="../pages/teachers.html">teachers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="clearStorage()" id="loginOrOut" href="../pages/login.html">login</a>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-4">
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+
+            <div class="col">
+                <div class="card hover-card ">
+                    <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Anas Abu Eid</h5>
+                        <p class="card-text">
+                            Anas Abu Eid is a dynamic and skilled Web Development Instructor with a strong passion for coding
+
+                        </p>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a class="btn btn-theme cursor float-left">
+                            <i class="fa-brands fa-facebook-f "></i>
+
+                        </a>
+                        <!--<a class="btn btn-theme cursor" href="./anas.html">
+                            <i class="fa fa-eye"></i>
+
+                        </a>-->
+                        <a class="btn btn-theme cursor float-right">
+                            <i class="fa-brands fa-instagram"></i>
+
+                        </a>
+
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card  hover-card">
+                    <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Mahammed Salhem</h5>
+                        <p class="card-text">
+                            Anas Abu Eid is a dynamic and skilled Web Development Instructor with a strong passion for coding
+
+                        </p>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a class="btn btn-theme cursor float-left">
+                            <i class="fa-brands fa-facebook-f "></i>
+
+                        </a>
+
+                        <a class="btn btn-theme cursor float-right">
+                            <i class="fa-brands fa-instagram"></i>
+
+                        </a>
+
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card hover-card ">
+                    <img src="../media/Screenshot_20231125-201249.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Safaa Elbess</h5>
+                        <p class="card-text">
+                            Anas Abu Eid is a dynamic and skilled Web Development Instructor with a strong passion for coding
+
+                        </p>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a class="btn btn-theme cursor float-left">
+                            <i class="fa-brands fa-facebook-f "></i>
+
+                        </a>
+                        <!--<a class="btn btn-theme cursor" href="./anas.html">
+                            <i class="fa fa-eye"></i>
+
+                        </a>-->
+                        <a class="btn btn-theme cursor float-right">
+                            <i class="fa-brands fa-instagram"></i>
+
+                        </a>
+
+
+
+                    </div>
+                </div>
+            </div>
+          
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4 mt-4">
+
+            <div class="col">
+                <div class="card hover-card ">
+                    <img src="../media/Screenshot_20231125-195619.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Anas Abu Eid</h5>
+                        <p class="card-text">
+                            Anas Abu Eid is a dynamic and skilled Web Development Instructor with a strong passion for coding
+
+                        </p>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a class="btn btn-theme cursor float-left">
+                            <i class="fa-brands fa-facebook-f "></i>
+
+                        </a>
+                        <!--<a class="btn btn-theme cursor" href="./anas.html">
+                            <i class="fa fa-eye"></i>
+
+                        </a>-->
+                        <a class="btn btn-theme cursor float-right">
+                            <i class="fa-brands fa-instagram"></i>
+
+                        </a>
+
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card hover-card ">
+                    <img src="../media/Screenshot_20231125-195834_2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Mahammed Salhem</h5>
+                        <p class="card-text">
+                            Anas Abu Eid is a dynamic and skilled Web Development Instructor with a strong passion for coding
+
+                        </p>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a class="btn btn-theme cursor float-left">
+                            <i class="fa-brands fa-facebook-f "></i>
+
+                        </a>
+
+                        <a class="btn btn-theme cursor float-right">
+                            <i class="fa-brands fa-instagram"></i>
+
+                        </a>
+
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card hover-card ">
+                    <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Safaa Elbess</h5>
+                        <p class="card-text">
+                            Anas Abu Eid is a dynamic and skilled Web Development Instructor with a strong passion for coding
+
+                        </p>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a class="btn btn-theme cursor float-left">
+                            <i class="fa-brands fa-facebook-f "></i>
+
+                        </a>
+
+                        <a class="btn btn-theme cursor float-right">
+                            <i class="fa-brands fa-instagram"></i>
+
+                        </a>
+
+
+
+                    </div>
+                </div>
+            </div>
+          
+        </div>
+        
+        </div>
+  
+
+    <footer class="footer mt-auto py-3 ">
+        <div class="container text-center">
+            <span class="text-muted">@ All rights reserved</span>
+        </div>
+    </footer>
+    <script src="../js/teachers.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+

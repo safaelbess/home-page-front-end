@@ -1,56 +1,57 @@
-#headerDiv{
-    background-color: black;
-    height: 100px;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
+
+    .gridContainer{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 10px;
+       border: 1px;
+       border-radius: 2px;
+         margin-left: 20px;
+         margin-top: 70px;
+        
+    }
+    
+    .gridItem{
+        margin-left: 20px;
+        color:darkblue;
+        border: 5px;
+        border-radius: 5px;
+        border-color: blue;
+    }
+    .gridContainer img{
+        height: 200px;
+        width: 200px;
+       border: 2px solid darkolivegreen;
+       margin-top: 40px;
+    }
+    
+    .carousel img {
+        width: 50px;
+        height: 50px;
+    }
+   
+
+   .gridContainer img:hover{
+       border: 2px;
+       border-radius: 2px;
+       border-block-color: green;
+       
+}
+   
+.gridContainer h3{
+       margin-top: 50px;
+       color:darkgreen;
+       margin-right: 40px;
+       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   }
+
+   span{
+color: brown;
+
+   }
+   body{
+    background-image: url("../media/edu.jpg");
+    background-position: center;
+    background-size: cover;
+
 
 }
-
-#headerDiv img{
-    height: 100px;
-    width: 100px;
-    float: left;
-}
-
-#headerDiv h1{
-    color: grey ;
-    font-size: 50px;
-    margin-top: 20px;
-    margin-left: 100px;
-    margin-right: 40px;
-    float: left;
-
-}
-#headerDiv a{
-    color:whitesmoke;
-    font-size: 15px;
-    margin-left: 40px;
-    margin-top: 40px;
-    margin-right: 40;
-    float:left;
-    text-decoration:none;
-    background-color: gray;
-    padding: 5px;
-    border: 1px solid whitesmoke;
-    border-radius: 5px;
-}
-
-}
-
-#footerDiv{
-    background-color: black;
-    height: 50px;
-    width: 100%;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-     }
-     #footerDiv p{
-         color: aliceblue;
-         margin-left: 40;
-         margin-top: 10px;
-         text-align: center;
-
-     }
